@@ -1,20 +1,20 @@
-/* Geralzao */
+/* se quiser sim */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fonte geral e corpo */
 body {
-  background-color: #fffdf5;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf2;
+  color: #2f2f2f;
 }
 
 /* Navegação */
 #navbar {
-  background-color: #5a3e2b;
+  background-color: #4e714c;
   padding: 1rem 0;
 }
 
@@ -25,64 +25,64 @@ body {
 }
 
 #navbar li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 #navbar a {
-  color: #fff7e0;
+  color: #fffce9;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 #navbar a:hover {
-  color: #ffcf74;
+  color: #cfe8c9;
 }
 
 /* Cabeçalho */
 header {
+  background-color: #f5ecd8;
   text-align: center;
-  padding: 3rem 1rem 1.5rem;
-  background-image: linear-gradient(to right, #f9e6b5, #e8d4b0);
-  color: #3d2a1a;
+  padding: 3rem 1rem;
+  color: #3e5c3e;
 }
 
 header h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 header p {
   font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 /* Sessão de notícias */
 #noticias {
-  padding: 2rem;
+  padding: 2rem 1rem;
+  background-color: #f9f5e9;
   text-align: center;
 }
 
 #noticias h2 {
   font-size: 2rem;
-  color: #4e3825;
+  color: #4d674d;
+  margin-bottom: 2rem;
 }
 
-/* Cartas de notícias */
+/* Cartas */
 .cartas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .carta {
-  background-color: #fff8e6;
-  border: 1px solid #d9c8a9;
+  background-color: #ffffff;
+  border: 2px solid #e2d8b8;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 280px;
   padding: 1.5rem;
   transition: transform 0.3s ease;
@@ -92,42 +92,42 @@ header p {
   transform: scale(1.03);
 }
 
-.carta h4 {
-  color: #8a5e3b;
-  font-size: 1.1rem;
+.carta h3 {
+  color: #4e714c;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-.carta h2 {
-  font-size: 0.95rem;
-  color: #7d6a50;
-  margin-bottom: 0.8rem;
+.carta h4 {
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  margin-bottom: 1rem;
 }
 
 .carta p {
   font-size: 0.95rem;
-  color: #444;
-}
-
-/* Contato */
-.contataodobem {
-  background-color: #e6d5b8;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.contataodobem h2 {
-  font-size: 1.8rem;
-  color: #3a2a1a;
-  margin-bottom: 0.5rem;
-}
-
-.contataodobem p {
-  font-size: 1rem;
   color: #333;
 }
 
-.contataodobem a {
-  color: #5a3e2b;
+/* Contato */
+#contato {
+  background-color: #e6f0db;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#contato h2 {
+  color: #3f5a3f;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#contato p {
+  font-size: 1rem;
+  color: #2f2f2f;
+}
+
+#contato a {
+  color: #4e714c;
   text-decoration: underline;
 }
