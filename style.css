@@ -1,0 +1,97 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #556B2F;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar ul li a {
+  color: #F0E68C;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #FFFACD;
+}
+
+body {
+  padding-top: 60px; 
+  background-color: #D2B48C;
+}
+
+#contato {
+  max-width: 800px;
+  margin: 40px auto 60px auto;
+  background: #D2B48C;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(50, 100, 50, 0.15);
+}
+
+#contato h2 {
+  color: #808000;
+  border-bottom: 3px solid #556B2F;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+#contato p {
+  color: #3b5323;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#contato a {
+  color: #556B2F;
+  text-decoration: underline;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.carta {
+ background-color: #808000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carta.link {
+  background-color: #4a2f2f;
+  color: #3b5323;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.çim {
+align-items: center;
+}
