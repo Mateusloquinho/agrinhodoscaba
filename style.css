@@ -1,130 +1,97 @@
-/* se quiser sim */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfaf2;
-  color: #2f2f2f;
-}
-
 #navbar {
-  background-color: #4e714c;
-  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #556B2F;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
 }
 
 #navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
-  list-style: none;
+  gap: 40px;
 }
 
-#navbar li {
-  margin: 0 1.5rem;
+#navbar ul li {
+  display: inline;
 }
 
-#navbar a {
-  color: #fffce9;
+#navbar ul li a {
+  color: #F0E68C;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
 }
 
-#navbar a:hover {
-  color: #cfe8c9;
+#navbar ul li a:hover {
+  color: #FFFACD;
 }
 
-/* Cabeçalho */
-header {
-  background-color: #f5ecd8;
-  text-align: center;
-  padding: 3rem 1rem;
-  color: #3e5c3e;
+body {
+  padding-top: 60px; 
+  background-color: #D2B48C;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-#noticias {
-  padding: 2rem 1rem;
-  background-color: #f9f5e9;
-  text-align: center;
-}
-
-#noticias h2 {
-  font-size: 2rem;
-  color: #4d674d;
-  margin-bottom: 2rem;
-}
-
-/* Cartas */
-.cartas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.carta {
-  background-color: #ffffff;
-  border: 2px solid #e2d8b8;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 280px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.carta:hover {
-  transform: scale(1.03);
-}
-
-.carta h3 {
-  color: #4e714c;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.carta h4 {
-  font-size: 0.9rem;
-  color: #7a7a7a;
-  margin-bottom: 1rem;
-}
-
-.carta p {
-  font-size: 0.95rem;
-  color: #333;
-}
-
-/* Contato */
 #contato {
-  background-color: #e6f0db;
-  padding: 2rem 1rem;
-  text-align: center;
+  max-width: 800px;
+  margin: 40px auto 60px auto;
+  background: #D2B48C;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(50, 100, 50, 0.15);
 }
 
 #contato h2 {
-  color: #3f5a3f;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  color: #808000;
+  border-bottom: 3px solid #556B2F;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.9em;
+  text-align: center;
 }
 
 #contato p {
-  font-size: 1rem;
-  color: #2f2f2f;
+  color: #3b5323;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
 }
 
 #contato a {
-  color: #4e714c;
+  color: #556B2F;
   text-decoration: underline;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.carta {
+ background-color: #808000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carta.link {
+  background-color: #4a2f2f;
+  color: #3b5323;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.çim {
+align-items: center;
 }
